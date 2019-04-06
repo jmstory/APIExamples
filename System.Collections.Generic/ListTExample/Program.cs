@@ -9,6 +9,7 @@ namespace ListTExample
         static void Main(string[] args)
         {
             // Type List<T> example here.
+            Console.WriteLine("abc");
         }
     }
 }
