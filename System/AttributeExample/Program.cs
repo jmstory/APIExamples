@@ -34,8 +34,11 @@ namespace AttributeExample
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
+            // @전민기: 예제 추가할 것
+            
             AnimalTypeTestClass testClass = new AnimalTypeTestClass();
             Type type = testClass.GetType();
             foreach(MethodInfo mInfo in type.GetMethods())
@@ -50,7 +53,7 @@ namespace AttributeExample
                 }
             }
            
-            // @전민기: 예제 추가할 것
+           
         }
     }
 }
