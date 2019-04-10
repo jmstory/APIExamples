@@ -9,10 +9,6 @@ namespace CallerMemberNameAttributeExample
   
    public sealed class CallerMemberNameAttribute : Attribute
    {
-       
-   }
-    class Program
-    {       
         public void DoProcessing()
         {
             TraceMessage("Something happened");
@@ -28,12 +24,16 @@ namespace CallerMemberNameAttributeExample
             System.Diagnostics.Trace.WriteLine("sourceFilePath: " + sourceFilePath);
             System.Diagnostics.Trace.WriteLine("sourceLineNumber: " + sourceLineNumber);
         }   
-      
+   }
+    class Program
+    {       
+       
+        
         static void Main(string[] args)
         {       
             // @전민기: 예제 추가 할 것
-            
-            DoProcessing();
+            CallerMemberNameAttribute TestCallerMemberNameAttribute = new CallerMemberNameAttribute();
+            TestCallerMemberNameAttribute.DoProcessing();
         }
     }
 }
