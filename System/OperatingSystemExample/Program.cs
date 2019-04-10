@@ -1,14 +1,7 @@
 ﻿using System;
 
 namespace OperatingSystemExample
-{
-    // ????????? 이거 왜 에러뜸?
-    // [System.Runtime.InteropServices.ComVisible(true)]
-    // [System.Serializable]
-    // public sealed class OperatingSystem : ICloneable , System.Runtime.Serialization.ISerializable
-    // {
-
-    // }
+{  
     class Program
     {
         static void Main(string[] args)
