@@ -4,17 +4,7 @@ using System;
 
 
 namespace CallerMemberNameAttributeExample
-{    
-   [System.AttributeUsage(System.AttributeTargets.Parameter, Inherited=false)]
-  
-   public sealed class CallerMemberNameAttribute : Attribute
-   {
-        // public void DoProcessing()
-        // {
-        //     TraceMessage("Something happened");
-        // }
-        
-   }
+{  
     class Program
     {       
        static void TraceMessage(string message,
@@ -32,8 +22,7 @@ namespace CallerMemberNameAttributeExample
         static void Main(string[] args)
         {       
             // @전민기: 예제 추가 할 것
-            //CallerMemberNameAttribute TestCallerMemberNameAttribute = new CallerMemberNameAttribute();
-            //TestCallerMemberNameAttribute.DoProcessing();
+            
             TraceMessage("aa");
         }
     }
